@@ -1,0 +1,9 @@
+﻿@model IQueryable<Employee>
+
+@foreach (var e in Model)
+{
+    <p>First name: @e.EmployeeFirstName</p>
+    <p>last name: @e.EmployeeLastName</p>
+    <p>Avatar Link: @e.EmployeeAvatar</p>
+    <p>Email: @e.EmployeeEmail</p>
+}
